@@ -139,7 +139,7 @@ HarmfulEvents <- dataStorm2.0 %>%
 
 We plot the results.
 
-```{r plot 1}
+```{r plot1}
 ggplot(data=HarmfulEvents, aes(x=reorder(event.type, total.health.damage.by.event), 
                                y=total.health.damage.by.event)) +
     geom_bar(stat="identity", color="blue", fill="white") +
@@ -166,7 +166,7 @@ ExpensiveEvents <- dataStorm2.0 %>%
 
 We plot the results.
 
-```{r plot 2}
+```{r plot2}
 ggplot(data=ExpensiveEvents, aes(x=reorder(event.type, total.cost.damage.by.event), 
                                y=total.cost.damage.by.event*1e-9)) +
     geom_bar(stat="identity", color="blue", fill="white") +

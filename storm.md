@@ -183,7 +183,7 @@ ggplot(data=HarmfulEvents, aes(x=reorder(event.type, total.health.damage.by.even
     coord_flip() + scale_y_log10()
 ```
 
-![plot of chunk plot 1](figure/plot 1-1.png)
+![plot of chunk plot1](figure/plot1-1.png)
 
 We can see that the weather event that caused the worst damage on people is the **tornado** with approximatively **0.1 million of victims**. The three next worst events are **heat, wind and flood**.
 
@@ -214,6 +214,6 @@ ggplot(data=ExpensiveEvents, aes(x=reorder(event.type, total.cost.damage.by.even
     coord_flip()
 ```
 
-![plot of chunk plot 2](figure/plot 2-1.png)
+![plot of chunk plot2](figure/plot2-1.png)
 
 We note that the weather event that caused the worst cost of damage in the US is the **flood**. The second worst events are both the **typhoon and hurricane**.
